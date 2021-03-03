@@ -1,0 +1,83 @@
+html, body {
+    font-size: 16px;
+}
+
+.container-fluid{   
+    background-image: url(../images/backround-img-1.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 54px 0;
+}
+
+.container-fluid .container{
+    width: 1670px;
+    padding: 0 15px;
+    margin: 0 auto;    
+}
+
+.container-fluid .main-header{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.container-fluid .nav-container nav{
+    --gap: 84px;   
+}
+
+.main-header .logo-search-container img{
+    width: 161px;
+}
+
+.main-header .logo-search-container input{
+    margin-left: 245px;
+}
+
+.container-fluid .container .nav-container ul{
+    display: inline-flex;
+    gap: var(--gap);
+}
+
+.container-fluid .container .nav-container a{
+    font-size: 20px;
+    font-family: Gilroy;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/* INPUT */
+.input{    
+    padding: 12px 200px 14px 75px;
+    background-color: rgb(108 119 124);
+    background-image: url(../images/search.png);   
+    background-repeat: no-repeat;
+    background-position: 35px 15px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: Gilroy;
+    font-weight: lighter;
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(255 255 255 / 93%);
+}
+
+/* BUTTON */
+.btn{
+    background-color: #E94560;
+    color: #FFFFFF;
+}
+
+.btn-header{
+    padding: 7px 59px 13px 56px;
+    margin-left: 82px; 
+    box-shadow: 0px 0px 60px rgb(233 69 96 / 80%);
+}
+
+.btn-see-more{
+    font-size: 22px;
+    padding: 8px 64px 10px 56px;
+    box-shadow: 0px 0px 30px rgb(233 69 96 / 100%);
+}
