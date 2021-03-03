@@ -1,20 +1,25 @@
 html, body {
+    font-family: Gilroy;
     font-size: 16px;
+    color: #FFFFFF;
 }
 
 .container-fluid{   
     background-image: url(../images/backround-img-1.png);
+    /* background-color: #1A1A2E; */
     background-position: top center;
     background-repeat: no-repeat;
-    padding: 54px 0;
+    padding: 55px 0 60px 0;
+    position: relative; 
 }
 
 .container-fluid .container{
     width: 1670px;
     padding: 0 15px;
-    margin: 0 auto;    
+    margin: 0 auto;      
 }
 
+/* HEADER */
 .container-fluid .main-header{
     display: flex;
     justify-content: space-between;    
@@ -22,6 +27,10 @@ html, body {
 
 .container-fluid .nav-container nav{
     --gap: 84px;   
+}
+
+.main-header .logo-search-container h1{
+    display: inline-block;
 }
 
 .main-header .logo-search-container img{
@@ -37,6 +46,10 @@ html, body {
     gap: var(--gap);
 }
 
+.container-fluid .container .nav-container li{
+    padding: 7px 0;
+}
+
 .container-fluid .container .nav-container a{
     font-size: 20px;
     font-family: Gilroy;
@@ -45,6 +58,122 @@ html, body {
     text-decoration: none;
 }
 
+/* ikone-img */
+.container-fluid .ikone-img{
+    position: relative;
+    width: 100%;
+    margin-top: 190px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-fluid .ikone-img .star{
+    position: absolute;
+    width: 69px;   
+    left: 0;
+    top: 48px;
+}
+
+.container-fluid .ikone-img .arrow{
+    position: absolute;
+    width: 68px;   
+    bottom: 0;
+    left: 635px;
+}
+
+.container-fluid .ikone-img .squares{
+    width: 35px;
+    margin-right: 168px;
+    margin-bottom: 46px;  
+}
+
+/* MAIN */
+.container-fluid .container main{
+    padding: 65px 0 28px 0;
+}
+
+.container-fluid .container main .singer-data{
+    width: 700px;
+}
+
+.container-fluid .container main .singer-data h2{
+    font-size: 85px;
+    margin-bottom: 30px;
+}
+
+.container-fluid .container main .singer-data p{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.container-fluid .container main .singer-data .characterization-music{
+   margin-bottom: 28px;
+}
+
+.container-fluid .container main .singer-data h3{
+    font-size: 20px;
+    opacity: 48%;
+    padding: 5px 0;
+}
+
+.container-fluid .container main .singer-data .genres, .members{
+    opacity: 48%;
+}
+
+.container-fluid .container main .singer-data .genres{
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer{
+    padding: 28px 0 15px 0;
+    width: 100%;
+}
+
+footer .footer-container{
+    position: relative;
+}
+
+
+footer .social-network{
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 29px;
+    margin-left: 65px;
+}
+
+footer .social-network .youtube img {
+    width: 44px;
+}
+
+footer .social-network .spotify img {
+    width: 33px;
+}
+
+footer .social-network .dezzer img {
+    width: 109px;
+}
+
+footer .circular-arrow {
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+footer .footer-container .next {
+    width: 73px;
+    position: absolute;
+    right: -15px;
+    bottom: 32px;
+}
+
+footer .footer-container .div-element {
+    width: 191px;
+    position: absolute;
+    right: -15px;
+    bottom: -30px;
+}
 
 /* INPUT */
 .input{    
@@ -68,6 +197,7 @@ input::-webkit-input-placeholder {
 .btn{
     background-color: #E94560;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .btn-header{
@@ -80,4 +210,24 @@ input::-webkit-input-placeholder {
     font-size: 22px;
     padding: 8px 64px 10px 56px;
     box-shadow: 0px 0px 30px rgb(233 69 96 / 100%);
+}
+
+/* play-button */
+
+.container-fluid .play-button{
+    display: inline-block;
+    position: absolute;
+    width: 155px;
+    height: 155px;   
+    background-color: #E94560;
+    box-shadow: 0px 0px 60px rgb(233 69 96);
+    text-align: center;
+    right: 0;
+    top: calc(50% - 64px);
+    border: 1px solid #707070;
+}
+
+.container-fluid .play-button img{
+    width: 64px;
+    margin-top: calc(50% - 32px);
 }
